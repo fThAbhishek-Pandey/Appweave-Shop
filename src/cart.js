@@ -44,18 +44,18 @@ let generateCartItems = () => {
               <p>${name}</p>
               <p class="cart-item-price"> ₹ ${price}</p>
             </h4>
-            <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
+            <i onclick="removeItem(${id})" class="fa-solid fa-trash"></i>
           </div>
 
           <div class="cart-buttons">
             <div class="buttons">
-              <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
+            <i onclick="decrement(${id})" class="fa-solid fa-circle-minus"></i>
               <div id=${id} class="quantity">${item}</div>
-              <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
+              <i  onclick="increment(${id})" class="fa-solid fa-circle-plus fa-fade"></i>
             </div>
           </div>
 
-          <h3>$ ${item * price}</h3>
+          <h3>₹ ${item * price}</h3>
         
         </div>
       </div>

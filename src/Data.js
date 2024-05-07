@@ -1,6 +1,6 @@
 let shopItemsData = [
   {
-    id: "jfhgbvnscs",
+    id: "fth1",
     name : "Black Suit",
     gender: "female",
     color:"black",
@@ -12,7 +12,7 @@ let shopItemsData = [
     img: "images/k1.webp",
   },
   {
-    id: "ioytrhndcv",
+    id: "fth2",
     name: "Office Shirt",
     gender: "male",
     color:"blue",
@@ -24,7 +24,7 @@ let shopItemsData = [
     img: "images/t1.webp",
   },
   {
-    id: "wuefbncxbsn",
+    id: "fth3",
     name: "Pink frock",
     gender: "female",
     color:"red",
@@ -36,7 +36,7 @@ let shopItemsData = [
     img: "images/k2.webp",
   },
   {
-    id: "thyfhcbcv",
+    id: "fth4",
     name: "Casual Shirt",
     gender: "male",
     color:"black",
@@ -48,7 +48,7 @@ let shopItemsData = [
     img: "images/t2.webp",
   },
   {
-    id: "thiecbawdjksadjk",
+    id: "fth5",
     name: "Panjabi Gagraa",
     gender: "female",
     color:"blue",
@@ -60,7 +60,7 @@ let shopItemsData = [
     img: "images/k3.webp",
   },
   {
-    id: "iuertrywebncdjksadjk",
+    id: "fth6",
     name: "Pink -Green",
     gender: "male",
     color:"red",
@@ -72,7 +72,7 @@ let shopItemsData = [
     img: "images/t3.webp",
   },
   {
-    id: "thierytbvcbvzdhadjk",
+    id: "fth7",
     name: "Tour suit",
     gender: "female",
     color:"black",
@@ -84,7 +84,7 @@ let shopItemsData = [
     img: "images/k4.webp",
   },
   {
-    id: "trfoiwfcnbcawdjksadjk",
+    id: "fth8",
     name: "Polo Shirt",
     gender: "male",
     color:"red",
@@ -96,7 +96,7 @@ let shopItemsData = [
     img: "images/t4.webp",
   },
   {
-    id: "cbvxbcvsceldk",
+    id: "fth9",
     name: "White Grow",
     gender: "female",
     color:"blue",
@@ -108,7 +108,7 @@ let shopItemsData = [
     img: "images/k5.webp",
   },
   {
-    id: "oiopijmjkhuihb",
+    id: "fth10",
     name: "Healty Shirt",
     gender: "male",
     color:"blue",
@@ -120,7 +120,7 @@ let shopItemsData = [
     img: "images/t5.webp",
   },
   {
-    id: "oiopijewyiohbjhib",
+    id: "fth11",
     name: "Patiyala Suit",
     gender: "female",
     color:"red",
@@ -132,7 +132,7 @@ let shopItemsData = [
     img: "images/k6.webp",
   },
   {
-    id: "rtytytuyuytyytbvncv",
+    id: "fth12",
     name: "Fth T-Shirt",
     gender: "male",
     color:"black",
