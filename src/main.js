@@ -44,7 +44,7 @@ let generateShop = () => {// function for generating cart
     .join(""));
 };
 
-generateShop();// call the generating fuction to include in cast
+// generateShop();// call the generating fuction to include in cast
 /*
    used to increase the selected product item quantity by 1
  */
