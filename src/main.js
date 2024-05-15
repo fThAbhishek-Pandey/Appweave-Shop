@@ -108,3 +108,77 @@ let calculation = () => {
 };
 
 calculation();
+console.log( "display button  hello");
+const btnContainer = document.querySelector(".btn-container");
+// console.log(sectionCenter);
+console.log( "display button ",btnContainer);
+// display all items when page loads
+window.addEventListener("DOMContentLoaded", function () {
+  // diplayMenuItems(menu);
+  generateShop(shopItemsData);// call the generating fuction to include in cast
+  displayMenuButtons();
+});
+function displayMenuButtons() {
+  // create a categries array that store all the categories of food 
+  const properties = shopItemsData.reduce(
+    function (values, item) {
+      // console.log("value",values);
+      // console.log("item",item);
+      // console.log("gender",item.gender);
+      if (!values.includes(item.gender)) {// checking the value is null or not 
+        values.push(item.gender);
+      }
+      if (!values.includes(item.level)) {// checking the value is null or not 
+        values.push(item.level);
+      }
+      if (!values.includes(item.color)) {// checking the value is null or not 
+        values.push(item.color);
+      }
+      if (!values.includes(item.type)) {// checking the value is null or not 
+        values.push(item.type);
+      }
+      return values;
+    },
+    ["all"]
+  );
+  // creating button 
+  const categoryBtns =  properties
+    .map(function (popt) {
+      return `<button type="button" class="filter-btn" data-id=${popt}>
+          ${popt}
+        </button>`;
+    })
+    .join("");
+
+  btnContainer.innerHTML = categoryBtns;
+  // creating a filter button 
+  // filterBtns are the array of button that all the button as Nodelist
+  const filterBtns = btnContainer.querySelectorAll(".filter-btn");
+  console.log(filterBtns);
+
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      // console.log(e);
+      // console.log(e.currentTarget);
+      // console.log(e.currentTarget.dataset);
+      // console.log(e.currentTarget.dataset.id);
+      const popt = e.currentTarget.dataset.id;// finding category whitch user choose
+      //  filtering from menu 
+      // if the item is belong to category then it goes as a form of objec in menuCategory
+  
+    const shopGen = shopItemsData.filter(function (shopItem) {
+            console.log(shopItem.gender);
+        if (shopItem.gender === popt|| shopItem.level === popt||shopItem.type === popt||shopItem.color === popt) {// checking category
+          return shopItem;
+        }
+      });
+      console.log( shopGen);
+      //  displaying on user screen 
+      if (popt === "all") {
+        generateShop(shopItemsData)
+      } else {
+        generateShop(shopGen)
+      }
+    });
+  });
+}
