@@ -13,8 +13,8 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];// it take data from
   2.  images, title, price, buttons, description
  */
 
-let generateShop = () => {// function for generating cart
-  return (shop.innerHTML = shopItemsData
+let generateShop = (shopItems) => {// function for generating cart
+  return (shop.innerHTML = shopItems
     .map((x) => {
       let { id, name, price, desc, img} = x;
       let search = basket.find((y) => y.id === id) || [];
